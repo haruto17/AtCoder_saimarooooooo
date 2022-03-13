@@ -24,5 +24,8 @@
     <ClCompile Include="100-a.cpp">
       <Filter>ソース ファイル\ABC\100</Filter>
     </ClCompile>
+    <ClCompile Include="100-b.cpp">
+      <Filter>ソース ファイル\ABC\100</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
