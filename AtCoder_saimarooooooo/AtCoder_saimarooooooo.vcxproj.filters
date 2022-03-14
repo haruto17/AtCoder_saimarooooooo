@@ -36,5 +36,8 @@
     <ClCompile Include="100-c.cpp">
       <Filter>ソース ファイル\ABC\100</Filter>
     </ClCompile>
+    <ClCompile Include="101-b.cpp">
+      <Filter>ソース ファイル\ABC\101</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
