@@ -31,6 +31,9 @@
     <Filter Include="ソース ファイル\ABC\120">
       <UniqueIdentifier>{9e3dbbb4-18b1-47d0-ad91-1ae437cad5dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\ABC\017">
+      <UniqueIdentifier>{d2bb29cf-5ff1-460f-a091-133bbf2dabb4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="100-a.cpp">
@@ -62,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="120-c.cpp">
       <Filter>ソース ファイル\ABC\120</Filter>
+    </ClCompile>
+    <ClCompile Include="017-b.cpp">
+      <Filter>ソース ファイル\ABC\017</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
