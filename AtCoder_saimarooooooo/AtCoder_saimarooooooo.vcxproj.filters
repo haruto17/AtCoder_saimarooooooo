@@ -34,6 +34,12 @@
     <Filter Include="ソース ファイル\ABC\017">
       <UniqueIdentifier>{d2bb29cf-5ff1-460f-a091-133bbf2dabb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\ARC">
+      <UniqueIdentifier>{b4d7c61b-0fd0-49b4-9317-9b9a4d3b60af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ARC\104">
+      <UniqueIdentifier>{f3644722-f7f9-420b-b692-85f53e32f234}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="100-a.cpp">
@@ -68,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="017-b.cpp">
       <Filter>ソース ファイル\ABC\017</Filter>
+    </ClCompile>
+    <ClCompile Include="104-a.cpp">
+      <Filter>ソース ファイル\ARC\104</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
