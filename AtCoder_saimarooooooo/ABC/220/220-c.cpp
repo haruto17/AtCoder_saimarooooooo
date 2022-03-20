@@ -31,12 +31,10 @@ int main()
 		sumb += val;
 		ans++;
 
-		if (sumb > X)
-		{
-			cout << ans << endl;
-			return 0;
-		}
+		if (sumb > X) break;
 	}
+
+	cout << ans << endl;
 
 	return 0;
 }
