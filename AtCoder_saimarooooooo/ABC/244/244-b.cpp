@@ -13,7 +13,7 @@ int main()
 	string T;
 	cin >> T;
 
-	int direction = 1;
+	int direction = 0;
 	int ans_x = 0;
 	int ans_y = 0;
 
@@ -21,16 +21,12 @@ int main()
 	{
 		if (T[i] == 'S')
 		{
-			if (direction == 1)ans_x++;
-			else if (direction == 2)ans_y--;
-			else if (direction == 3) ans_x--;
-			else if (direction == 4)ans_y++;
+			if (direction == 0)ans_x++;
+			else if (direction == 1)ans_y--;
+			else if (direction == 2) ans_x--;
+			else if (direction == 3)ans_y++;
 		}
-		else if (T[i] == 'R')
-		{
-			direction++;
-			if (direction > 4)direction = 1;
-		}
+		else if (T[i] == 'R')direction = (direction + 1) % 4;
 	}
 
 	cout << ans_x << " " << ans_y << endl;
