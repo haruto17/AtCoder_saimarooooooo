@@ -1,9 +1,9 @@
 //ABC187-c
-//TLE
+//AC
 
 #include<iostream>
 #include<vector>
-#include<algorithm>
+#include<set>
 
 using namespace std;
 
@@ -14,27 +14,19 @@ int main()
 	int N;
 	cin >> N;
 
-	string S;
-	int count = 0;
-	vector<string> v;
+	vector<string> S(N);
+	set<string> StringSet;
 	rep(i, N)
 	{
-		cin >> S;
-		v.push_back(S);
-
-		if (S[0] != '!') count++;
+		cin >> S[i];
+		StringSet.insert(S[i]);
 	}
 
-	sort(v.rbegin(), v.rend());
-
-	rep(i, count)
+	rep(i, N)
 	{
-		string Q = "!" + v[i];
-		auto result = find(v.begin(), v.end(), Q);
-		
-		if (result != v.end())
+		if (StringSet.count("!" + S[i]))
 		{
-			cout << v[i] << endl;
+			cout << S[i] << endl;
 			return 0;
 		}
 	}
