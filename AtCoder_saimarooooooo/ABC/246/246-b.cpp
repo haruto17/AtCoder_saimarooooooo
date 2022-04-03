@@ -12,9 +12,9 @@ int main()
 	cin >> A >> B;
 
 	double d = A * A + B * B;
-	double dd = sqrt(d);
+	d = sqrt(d);
 
-	cout << fixed << setprecision(12) << A / dd << " " << B / dd << endl;
+	cout << fixed << setprecision(12) << A / d << " " << B / d << endl;
 
 	return 0;
 }
