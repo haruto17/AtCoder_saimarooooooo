@@ -1,7 +1,6 @@
 //ABC085-A
 
 #include<iostream>
-#include<string>
 
 using namespace std;
 
@@ -10,7 +9,8 @@ int main()
 	string s;
 	cin >> s;
 
-	cout << s.replace(0, 4, "2018") << endl;
+	s[3] = '8';
+	cout << s << endl;
 
 	return 0;
 }
