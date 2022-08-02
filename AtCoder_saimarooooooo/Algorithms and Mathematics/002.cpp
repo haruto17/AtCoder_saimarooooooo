@@ -1,15 +1,15 @@
-//002 Sum of 3 Integers
+// 002 Sum of 3 Integers
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-	int A, B, C;
-	cin >> A >> B >> C;
+	int a1, a2, a3;
+	cin >> a1 >> a2 >> a3;
 
-	cout << A + B + C << endl;
+	cout << a1 + a2 + a3 << endl;
 
 	return 0;
 }
