@@ -1,32 +1,31 @@
-// ABC263
+// ABC263-A
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
-#define rep(i, n) for (int i = 1; i < (int)(n); i++)
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
 
 int main()
 {
-    int n;
-    cin >> n;
+    vector<int> a(5);
+    rep(i, 5) cin >> a[i];
 
-    vector<int> v(n + 1);
-    rep(i, n)
+    sort(a.begin(), a.end());
+
+    if (a[0] == a[2] && a[3] == a[4])
     {
-        cin >> v[i];
-        v[i]--;
+        cout << "Yes" << endl;
     }
-
-    vector<int> dp(n + 1);
-    dp[1] = 0;
-
-    rep(i, n)
+    else if (a[0] == a[1] && a[2] == a[4])
     {
-        dp[i] = dp[v[i]] + 1;
+        cout << "Yes" << endl;
     }
-
-    cout << dp[n - 1] << endl;
+    else
+    {
+        cout << "No" << endl;
+    }
 
     return 0;
 }
