@@ -15,7 +15,6 @@ int main() {
     }
 
     cin >> q;
-    vector<int> ans;
 
     for(int i = 1; i <= q; ++i) {
         cin >> query;
@@ -24,12 +23,8 @@ int main() {
             A[k] = x;
         } else {
             cin >> k;
-            ans.push_back(A[k]);
+            cout << A[k] << endl;
         }
-    }
-
-    for(auto x : ans) {
-        cout << x << "\n";
     }
 
     return 0;
