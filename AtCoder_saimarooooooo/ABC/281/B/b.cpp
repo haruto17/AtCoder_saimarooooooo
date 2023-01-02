@@ -10,9 +10,9 @@ int main() {
 
     bool ans = true;
 
-    if(!(s.front() >= char(65) && s.front() <= char(90))) {
+    if(!(s.front() >= 'A' && s.front() <= 'Z')) {
         ans = false;
-    } else if(!(s.back() >= char(65) && s.back() <= char(90))) {
+    } else if(!(s.back() >= 'A' && s.back() <= 'Z')) {
         ans = false;
     }
 
@@ -21,7 +21,7 @@ int main() {
     }
 
     for(int i = 1; i < s.size() - 1; ++i) {
-        if(!(s[i] >= char(48) && s[i] <= char(57))) {
+        if(!(s[i] >= '0' && s[i] <= '9')) {
             ans = false;
         }
 
@@ -32,9 +32,7 @@ int main() {
         }
     }
 
-    if(ans) {
-        cout << "Yes" << endl;
-    } else {
-        cout << "No" << endl;
-    }
+    cout << (ans ? "Yes" : "No") << "\n";
+
+    return 0;
 }
